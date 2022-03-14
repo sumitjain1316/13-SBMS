@@ -15,6 +15,7 @@ public class PersonController {
     
 	@GetMapping("/person")
 	public String loadPerson(Model model) {
+		System.out.println("The Form is Loading Here!!!"):
 		Person personObj = new Person();
 		model.addAttribute("person", personObj);
 		return "index";
